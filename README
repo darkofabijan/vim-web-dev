@@ -7,3 +7,5 @@ Create symlinks:
     ln -s ~/.vim/vimrc ~/.vimrc
 
 In vim run :BundleInstall! to install the plugins.
+
+The majority of the .vimrc code taken from https://github.com/jelera
