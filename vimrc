@@ -239,9 +239,9 @@ set expandtab
 
     let g:bufExplorerSortBy = "name"
 
-    nnoremap <silent> <Leader><l> :MiniBufExplorer<CR>
+    nnoremap <silent> <Leader>l :MiniBufExplorer<CR>
 
-    autocmd BufRead,BufNew :call UMiniBufExplorer"}}}
+    autocmd BufNew :call UMiniBufExplorer"}}}
 
     " Tagbar"{{{
     map <F4> :TagbarToggle<CR>"}}}
