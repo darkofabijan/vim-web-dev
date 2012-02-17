@@ -43,7 +43,6 @@ exe "set path=".expand("$PATH")
 syntax on
 
 set nomodeline
-set autochdir                                           " Automatically use the current file's directory as the working directory
 set backspace=indent,eol,start                          " Backspace will delete EOL chars, as well as indents
 set matchpairs+=<:>                                     " For characters that forms pairs for using % commands, this is for HTML Tags
 set shortmess=atToOI                                    " To avoid the 'Hit Enter' prompts caused by the file messages
