@@ -199,7 +199,7 @@ set expandtab
 
     " Recommended key-mappings.
     " <CR>: close popup and save indent.
-    inoremap <expr><CR>  neocomplcache#smart_close_popup() . "\<CR>"
+    inoremap <silent><CR>  <C-R>=neocomplcache#smart_close_popup()<CR><CR>
     " <TAB>: completion.
     inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
     " <C-h>, <BS>: close popup and delete backword char.
