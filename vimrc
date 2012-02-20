@@ -27,6 +27,8 @@ Bundle "godlygeek/tabular"
 Bundle "majutsushi/tagbar"
 Bundle "gregsexton/MatchTag"
 Bundle "jelera/vim-gummybears-colorscheme"
+Bundle "altercation/vim-colors-solarized"
+Bundle "guns/jellyx.vim"
 
 filetype plugin indent on
 
@@ -40,7 +42,7 @@ set ruler
 
 exe "set path=".expand("$PATH")
 
-syntax on
+syntax enable
 
 set nomodeline
 set backspace=indent,eol,start                          " Backspace will delete EOL chars, as well as indents
@@ -115,7 +117,6 @@ set list listchars=tab:»·,trail:·
 " General UI Options"
 set laststatus=2       " Always show the statusline
 
-
 set showmatch          " Shows matching brackets when text indicator is over them
 set scrolloff=5        " Show 5 lines of context around the cursor
 set sidescrolloff=20
@@ -147,7 +148,7 @@ set expandtab
 
 " General
 	" Clear search highlighting
-	nnoremap <silent> <Leader><space> :nohlsearch<CR>
+  nmap <silent> <leader>c :nohlsearch<CR>
 
 	" Repurpose left and right arrow keys to move between the buffers
 	nnoremap <silent> <Down>   :bn<CR>
