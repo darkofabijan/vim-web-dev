@@ -75,8 +75,8 @@ augroup END
 
 
 " Define , as map leader"
-let mapleader = ','
-let g:mapleader = ','
+let mapleader = ' '
+let g:mapleader = ' '
 
 " Disable all bells"
 set noerrorbells visualbell t_vb=
