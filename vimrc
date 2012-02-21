@@ -21,14 +21,13 @@ Bundle "Lokaltog/vim-powerline"
 Bundle "Lokaltog/vim-easymotion"
 Bundle "Shougo/neocomplcache"
 Bundle "fholgado/minibufexpl.vim"
-Bundle "msanders/snipmate.vim"
 Bundle "mattn/gist-vim"
 Bundle "godlygeek/tabular"
 Bundle "majutsushi/tagbar"
 Bundle "gregsexton/MatchTag"
 Bundle "jelera/vim-gummybears-colorscheme"
 Bundle "altercation/vim-colors-solarized"
-Bundle "guns/jellyx.vim"
+Bundle "Townk/vim-autoclose"
 
 filetype plugin indent on
 
