@@ -33,6 +33,8 @@ Bundle "Townk/vim-autoclose"
 
 filetype plugin indent on
 
+runtime! bundle/snipmate-snippets/support_functions.vim
+
 set title
 set hidden
 
