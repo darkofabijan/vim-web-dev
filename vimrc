@@ -149,7 +149,25 @@ set expandtab
 
 " General
 	" Clear search highlighting
-  nmap <silent> <leader>c :nohlsearch<CR>
+  nnoremap <silent><leader>c :nohlsearch<CR>
+
+  " Paste
+  let paste_mode = 0 " 0 = normal, 1 = paste
+
+  func! Paste_on_off()
+    if g:paste_mode == 0
+      set paste
+      let g:paste_mode = 1
+    else
+      set nopaste
+      let g:paste_mode = 0
+    endif
+    return
+  endfunc
+
+  " Paste Mode <F3>
+  nnoremap <silent> <F3> :call Paste_on_off()<CR>
+  set pastetoggle=<F3>
 
 	" Repurpose left and right arrow keys to move between the buffers
 	nnoremap <silent> <Down>   :bn<CR>
