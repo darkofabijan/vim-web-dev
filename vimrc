@@ -21,6 +21,7 @@ Bundle "Lokaltog/vim-powerline"
 Bundle "Lokaltog/vim-easymotion"
 Bundle "vlasar/snipmate"
 Bundle "vlasar/snipmate-snippets"
+Bundle "thisivan/vim-bufexplorer"
 Bundle "mattn/gist-vim"
 Bundle "godlygeek/tabular"
 Bundle "gregsexton/MatchTag"
@@ -149,6 +150,9 @@ set expandtab
 	" Clear search highlighting
   nnoremap <silent><leader>c :nohlsearch<CR>
 
+  " Start BufExplorer
+  nnoremap <silent><leader>l :BufExplorer<CR>
+
   " Paste
   let paste_mode = 0 " 0 = normal, 1 = paste
 
@@ -178,6 +182,10 @@ set expandtab
 	vmap = =gv
 
 " 3RD-PARTY PLUGINS SETTINGS
+
+  " Buffer Explorer
+  let g:bufExplorerDefaultHelp=0       " Do not show default help.
+  let g:bufExplorerShowRelativePath=1  " Show relative paths.
 
   " NERD tree"{{{
     let g:NERDTreeChristmasTree = 1
