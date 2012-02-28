@@ -27,6 +27,7 @@ Bundle "godlygeek/tabular"
 Bundle "gregsexton/MatchTag"
 Bundle "altercation/vim-colors-solarized"
 Bundle "Townk/vim-autoclose"
+Bundle "wincent/Command-T"
 
 filetype plugin indent on
 
@@ -186,6 +187,10 @@ set expandtab
   " Buffer Explorer
   let g:bufExplorerDefaultHelp=0       " Do not show default help.
   let g:bufExplorerShowRelativePath=1  " Show relative paths.
+
+  " Command-T
+  let g:CommandTMaxHeight=5
+  let g:bufExplorerShowRelativePath=1
 
   " NERD tree"{{{
     let g:NERDTreeChristmasTree = 1

@@ -8,6 +8,12 @@ Create symlinks:
     $ ln -s ~/.vim/vimrc ~/.vimrc
 
 In vim run :BundleInstall to install the plugins.
+
+Setting up snippets:
 Change directory to '~/.vim/bundle/snipmate-snippets' and run: $ rake deploy_local
+
+Installing Command-T:
+vim must be compiled with ruby support and the Command-T plugin must be compiled against the same version of Ruby as was vim.
+Change directory to '~/.vim/bundle/Command-T/ruby/command-t' and run: $ ruby extconf.rb && make
 
 The majority of the .vimrc code taken from https://github.com/jelera
