@@ -33,6 +33,8 @@ filetype plugin indent on
 
 runtime! bundle/snipmate-snippets/support_functions.vim
 
+autocmd BufWritePre * :%s/\s\+$//e
+
 set title
 set hidden
 
