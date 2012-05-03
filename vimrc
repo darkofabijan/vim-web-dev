@@ -57,9 +57,6 @@ set undolevels=1000
 set confirm
 set updatetime=1500
 
-set mousehide                                           " Hide the mouse cursor when typing
-set mouse=a
-
 " Encoding "
 set encoding=utf-8
 set termencoding=utf-8
@@ -112,10 +109,10 @@ set foldcolumn=0
 " Look and Feel settings
 set background=dark
 set t_Co=256
-colorscheme jellybeans
+colorscheme solarized
 
 " Display extra whitespace
-set list listchars=tab:»·,trail:·
+" set list listchars=tab:»·,trail:·
 
 " General UI Options"
 set laststatus=2       " Always show the statusline
@@ -155,6 +152,15 @@ set expandtab
 
   " Start BufExplorer
   nnoremap <silent><leader>l :BufExplorer<CR>
+  nnoremap <silent><leader>s :A<CR>
+  nnoremap <silent><leader>v :AV<CR>
+  nnoremap <silent><leader>\ :vs<CR>
+  nnoremap <silent><leader>- :split<CR>
+  nnoremap <silent><leader>1 :e ~/.vimrc<CR>
+
+  nnoremap <silent><leader>r :!rspec %<CR>
+  command W w
+  command Q q
 
   " Paste
   let paste_mode = 0 " 0 = normal, 1 = paste
@@ -193,6 +199,8 @@ set expandtab
   " Command-T
   let g:CommandTMaxHeight=5
   let g:bufExplorerShowRelativePath=1
+
+  set wildignore+=vendor/**
 
   " NERD tree"{{{
     let g:NERDTreeChristmasTree = 1

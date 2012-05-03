@@ -40,4 +40,4 @@ function! RunTest(args)
 endfunction
 
 map <Leader>; :call RunTest("")<CR>
-map <Leader>' :call RunTestFile("")<CR> 
+map <Leader>' :call RunTestFile("")<CR>
