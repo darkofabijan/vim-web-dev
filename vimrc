@@ -159,8 +159,10 @@ set expandtab
   nnoremap <silent><leader>1 :e ~/.vimrc<CR>
 
   nnoremap <silent><leader>r :!rspec %<CR>
+  nnoremap <silent><leader>w :wa<CR>
   command W w
   command Q q
+
 
   " Paste
   let paste_mode = 0 " 0 = normal, 1 = paste
