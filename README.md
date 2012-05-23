@@ -26,7 +26,7 @@ You will have to log out and log back in.
 Install cmd-t:
 
 ```Bash
-cd ~/.vim/bundle/Command-T/ruby/command-t'
+cd ~/.vim/bundle/Command-T/ruby/command-t
 ruby extconf.rb && make
 ```
 
