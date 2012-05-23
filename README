@@ -1,19 +1,33 @@
 Installation:
 
-    $ git clone git@github.com:darkofabijan/vim-web-dev.git ~/.vim
-    $ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-
-Create symlinks:
-
-    $ ln -s ~/.vim/vimrc ~/.vimrc
+```Bash
+git clone git@github.com:darkofabijan/vim-web-dev.git ~/.vim
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+ln -s ~/.vim/vimrc ~/.vimrc
+```
 
 In vim run :BundleInstall to install the plugins.
 
 Setting up snippets:
-Change directory to '~/.vim/bundle/snipmate-snippets' and run: $ rake deploy_local
+
+```Bash
+cd ~/.vim/bundle/snipmate-snippets && rake deploy_local
+```
 
 Installing Command-T:
-vim must be compiled with ruby support and the Command-T plugin must be compiled against the same version of Ruby as was vim.
-Change directory to '~/.vim/bundle/Command-T/ruby/command-t' and run: $ ruby extconf.rb && make
+
+You will have to compile Vim from source with Ruby support.
+```Bash
+./install-vim.sh
+```
+
+You will have to log out and log back in.
+
+Install cmd-t:
+
+```Bash
+cd ~/.vim/bundle/Command-T/ruby/command-t'
+ruby extconf.rb && make
+```
 
 The majority of the .vimrc code taken from https://github.com/jelera
