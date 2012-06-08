@@ -106,8 +106,11 @@ set foldmethod=marker
 set foldlevel=0
 set foldcolumn=0
 
+" Ack vim
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+
 " Look and Feel settings
-set background=dark
+set background=light
 set t_Co=256
 colorscheme solarized
 
