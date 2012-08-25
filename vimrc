@@ -28,6 +28,7 @@ Bundle "gregsexton/MatchTag"
 Bundle "altercation/vim-colors-solarized"
 Bundle "Townk/vim-autoclose"
 Bundle "wincent/Command-T"
+Bundle "kchmck/vim-coffee-script"
 
 filetype plugin indent on
 
