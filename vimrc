@@ -29,6 +29,7 @@ Bundle "altercation/vim-colors-solarized"
 Bundle "Townk/vim-autoclose"
 Bundle "wincent/Command-T"
 Bundle "kchmck/vim-coffee-script"
+Bundle "airblade/vim-gitgutter"
 
 filetype plugin indent on
 
@@ -166,6 +167,7 @@ set expandtab
   nnoremap <silent><leader>w :wa<CR>
   command W w
   command Q q
+  command Wq wq
 
 
   " Paste
@@ -207,6 +209,10 @@ set expandtab
   let g:bufExplorerShowRelativePath=1
 
   set wildignore+=vendor/**
+
+  " Vim Git Gutter
+  highlight SignColumn ctermbg=none
+  let g:gitgutter_signs = 1         " Activate gutter signs
 
   " NERD tree"{{{
     let g:NERDTreeChristmasTree = 1
