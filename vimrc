@@ -15,21 +15,17 @@ Bundle "tpope/vim-fugitive"
 Bundle "tpope/vim-surround"
 Bundle "tpope/vim-endwise"
 Bundle "tpope/vim-repeat"
-Bundle "scrooloose/nerdtree"
-Bundle "scrooloose/nerdcommenter"
 Bundle "Lokaltog/vim-powerline"
 Bundle "Lokaltog/vim-easymotion"
 Bundle "vlasar/snipmate"
 Bundle "vlasar/snipmate-snippets"
 Bundle "thisivan/vim-bufexplorer"
-Bundle "mattn/gist-vim"
-Bundle "godlygeek/tabular"
 Bundle "gregsexton/MatchTag"
 Bundle "altercation/vim-colors-solarized"
-Bundle "Townk/vim-autoclose"
-Bundle "wincent/Command-T"
 Bundle "kchmck/vim-coffee-script"
 Bundle "airblade/vim-gitgutter"
+Bundle "kien/ctrlp.vim"
+Bundle "elixir-lang/vim-elixir"
 
 filetype plugin indent on
 
@@ -202,15 +198,15 @@ set expandtab
 	vmap < <gv
 	vmap = =gv
 
+" GO
+
+au BufRead,BufNewFile *.go set filetype=go
+
 " 3RD-PARTY PLUGINS SETTINGS
 
   " Buffer Explorer
   let g:bufExplorerDefaultHelp=0       " Do not show default help.
   let g:bufExplorerShowRelativePath=1  " Show relative paths.
-
-  " Command-T
-  let g:CommandTMaxHeight=5
-  let g:bufExplorerShowRelativePath=1
 
   set wildignore+=vendor/**
 
@@ -218,11 +214,3 @@ set expandtab
   highlight SignColumn ctermbg=none
   let g:gitgutter_signs = 1         " Activate gutter signs
 
-  " NERD tree"{{{
-    let g:NERDTreeChristmasTree = 1
-    let g:NERDTreeCaseSensitiveSort = 1
-    let g:NERDTreeQuitOnOpen = 1
-    let g:NERDTreeWinPos = 'left'
-    let g:NERDTreeWinSize = 50
-    let g:NERDTreeShowBookmarks = 1
-    map <F2> :NERDTreeToggle<CR>"}}}
