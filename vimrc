@@ -108,7 +108,7 @@ set foldcolumn=0
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 " Look and Feel settings
-set background=light
+set background=dark
 set t_Co=256
 colorscheme solarized
 
@@ -158,6 +158,7 @@ set expandtab
   nnoremap <silent><leader>\ :vs<CR>
   nnoremap <silent><leader>- :split<CR>
   nnoremap <silent><leader>1 :e ~/.vimrc<CR>
+  nnoremap <silent><leader>2 :source ~/.vimrc<CR>
 
   nnoremap <silent><leader>r :!rspec %<CR>
   nnoremap <silent><leader>w :wa<CR>
@@ -168,6 +169,11 @@ set expandtab
   command W w
   command Q q
   command Wq wq
+
+  " Elixir specific
+  nnoremap <leader>t :!mix test<CR>
+  nnoremap <leader>f :!mix test %<CR>
+
 
 
   " Paste
@@ -213,4 +219,5 @@ au BufRead,BufNewFile *.go set filetype=go
   " Vim Git Gutter
   highlight SignColumn ctermbg=none
   let g:gitgutter_signs = 1         " Activate gutter signs
+
 
