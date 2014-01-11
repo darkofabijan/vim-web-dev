@@ -171,7 +171,7 @@ set expandtab
   command Wq wq
 
   " Elixir specific
-  nnoremap <leader>t :!mix test<CR>
+  nnoremap <leader>t :!mix test --trace<CR>
   nnoremap <leader>f :!mix test %<CR>
 
 
