@@ -26,6 +26,7 @@ Bundle "kchmck/vim-coffee-script"
 Bundle "airblade/vim-gitgutter"
 Bundle "kien/ctrlp.vim"
 Bundle "elixir-lang/vim-elixir"
+Bundle "jnurmine/Zenburn"
 
 filetype plugin indent on
 
@@ -108,9 +109,9 @@ set foldcolumn=0
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 " Look and Feel settings
-set background=dark
+" set background=dark
 set t_Co=256
-colorscheme solarized
+colorscheme zenburn
 
 " Display extra whitespace
 " set list listchars=tab:»·,trail:·
@@ -172,7 +173,7 @@ set expandtab
 
   " Elixir specific
   nnoremap <leader>t :!mix test --trace<CR>
-  nnoremap <leader>f :!mix test %<CR>
+  nnoremap <leader>f :!mix test --trace %<CR>
 
 
 
