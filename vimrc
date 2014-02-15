@@ -74,6 +74,8 @@ augroup fastescape
 	au InsertLeave * set notimeout
 augroup END
 
+" CTRL P
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)|deps|_build$'
 
 " Define , as map leader"
 let mapleader = ' '
